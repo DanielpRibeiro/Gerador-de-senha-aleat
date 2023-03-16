@@ -1,0 +1,113 @@
+img {
+    width: 50%;
+
+}
+
+* {
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-P {
+    width: 512px;
+}
+
+.input-usuario {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.barra {
+    margin-top: 10px;
+    -webkit-appearance: none;
+    border-radius: 10px;
+    background: #DFDFDF;
+    width: 100%;
+    padding: 3px;
+}
+
+.bt {
+    color: white;
+    background-color: #3EB72B;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+
+}
+.senha{
+    width: 512px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.result{
+    margin-top: 20px;
+}
+
+.password{
+    background-color: brown;
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    margin-top: 20px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+}
+
+.password:hover{
+    transform: scale(1.05);
+}
+
+/* deixar container invisivel  */
+
+.hide{
+    display: none;
+} 
+
+.copiar {
+    color: #FFF;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    font-size: 16px;
+    border-radius: 6px;
+    opacity: 0;
+    /* torna o objeto invisivel */
+    visibility: hidden; 
+    transition: all .5s ease-in-out;
+    text-align: center;
+} 
+
+.senha:hover .copiar{
+    bottom: 50px;
+    visibility: visible;
+    opacity: 1;
+}
